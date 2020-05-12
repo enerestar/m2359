@@ -2,6 +2,7 @@ package com.m2359;
 
 import com.m2359.IAnimal.CanFly;
 import com.m2359.IAnimal.CanWalk;
+import com.m2359.utils.Messages;
 
 public class Parrot extends Animal implements CanFly, CanWalk {
 
@@ -20,11 +21,11 @@ public class Parrot extends Animal implements CanFly, CanWalk {
 
     @Override
     public String fly() {
-        return "I can fly";
+        return Messages.getMessages().fly;
     }
 
     @Override
     public String walk() {
-        return "I can walk";
+        return Messages.getMessages().walk;
     }
 }

@@ -9,6 +9,6 @@ public class Shark extends Fish {
     }
 
     public String eat(Fish fish) {
-        return "Sharks eat " + fish.getClass().toString();
+        return "Sharks eat " + fish.getClass().getSimpleName();
     }
 }

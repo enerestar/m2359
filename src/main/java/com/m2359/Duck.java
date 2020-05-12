@@ -2,6 +2,7 @@ package com.m2359;
 
 import com.m2359.IAnimal.CanSwim;
 import com.m2359.IAnimal.CanWalk;
+import com.m2359.utils.Messages;
 
 public class Duck extends Animal implements CanWalk, CanSwim {
 
@@ -12,11 +13,11 @@ public class Duck extends Animal implements CanWalk, CanSwim {
 
     @Override
     public String swim() {
-        return "I can swim";
+        return Messages.getMessages().swim;
     }
 
     @Override
     public String walk() {
-        return "I can walk";
+        return Messages.getMessages().walk;
     }
 }
