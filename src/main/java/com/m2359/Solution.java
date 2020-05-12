@@ -29,6 +29,20 @@ public class Solution {
         System.out.println(rooster.getSound());
         System.out.println();
 
+        System.out.println("-- I am a PARROT living near a DOG --");
+        Parrot parrotDog= new Parrot(new Dog());
+        System.out.println(parrotDog.getSound());
+        System.out.println();
+
+        System.out.println("-- I am a PARROT living near a ROOSTER --");
+        Parrot parrotRooster= new Parrot(new Rooster());
+        System.out.println(parrotRooster.getSound());
+        System.out.println();
+
+        System.out.println("-- I am a PARROT living near a CAT --");
+        Parrot parrotCat = new Parrot(new Cat());
+        System.out.println(parrotCat.getSound());
+        System.out.println();
 
     }
 }
