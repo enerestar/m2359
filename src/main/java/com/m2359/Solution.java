@@ -44,5 +44,8 @@ public class Solution {
         System.out.println(parrotCat.getSound());
         System.out.println();
 
+        System.out.println("-- I am a FISH --");
+        Fish fish = new Fish();
+        System.out.println();
     }
 }
