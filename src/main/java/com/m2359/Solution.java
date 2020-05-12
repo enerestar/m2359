@@ -3,6 +3,7 @@ package com.m2359;
 import com.m2359.chicken.Chicken;
 import com.m2359.chicken.Rooster;
 import com.m2359.fish.Clownfish;
+import com.m2359.fish.Dolphin;
 import com.m2359.fish.Fish;
 import com.m2359.fish.Shark;
 import com.m2359.utils.Color;
@@ -60,6 +61,7 @@ public class Solution {
         System.out.println(fish.swim());
         System.out.println();
 
+        // B2
         System.out.println("-- I am a SHARK --");
         Shark shark = new Shark("large", Color.GREY);
         System.out.println(shark.getColor().text);
@@ -72,6 +74,12 @@ public class Solution {
         System.out.println(clownfish.getColor().text);
         System.out.println(clownfish.getSize());
         System.out.println(clownfish.makeJokes());
+        System.out.println();
+
+        // B3
+        System.out.println("-- I am a DOLPHIN --");
+        Dolphin dolphin = new Dolphin();
+        System.out.println(dolphin.swim());
         System.out.println();
 
         // D1
