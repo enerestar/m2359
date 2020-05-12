@@ -11,6 +11,9 @@ import com.m2359.fish.Dolphin;
 import com.m2359.fish.Fish;
 import com.m2359.fish.Shark;
 import com.m2359.utils.Color;
+import com.m2359.utils.Messages;
+
+import java.util.Locale;
 
 public class Solution {
 
@@ -139,5 +142,7 @@ public class Solution {
         System.out.println("No of animals that can SING: " + countSing);
         System.out.println();
 
-    }
+        System.out.println("-- I am a ROOSTER in a foreign land --");
+        Messages.setLocale(Locale.SIMPLIFIED_CHINESE);
+        System.out.println(rooster.getSound());    }
 }

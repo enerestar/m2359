@@ -15,19 +15,32 @@ public class Messages {
     public final String joke2;
     public final String joke3;
 
-    private static Messages messages = null;
-
+    private static Messages en_messages = null;
+    private static Messages zh_messages = null;
     private static Locale defaultLocale = Locale.ENGLISH;
+
+    public static void setLocale(Locale locale) {
+        Messages.defaultLocale = locale;
+    }
 
     public static Messages getMessages() {
         return Messages.getMessages(Messages.defaultLocale);
     }
 
     static Messages getMessages(Locale locale) {
-        if (Messages.messages == null) {
-            Messages.messages = new Messages(locale);
+        if(locale.equals(Locale.ENGLISH)) {
+            if (Messages.en_messages == null) {
+                Messages.en_messages = new Messages(locale);
+            }
+            return Messages.en_messages;
+        } else if (locale.equals(Locale.SIMPLIFIED_CHINESE)){
+            if (Messages.zh_messages == null) {
+                Messages.zh_messages = new Messages(locale);
+            }
+            return Messages.zh_messages;
+        } else {
+            throw new Error("Locale language "+ locale.getLanguage() + " not setup");
         }
-        return Messages.messages;
     }
 
     private Messages(Locale locale) {
