@@ -73,5 +73,19 @@ public class Solution {
         System.out.println(clownfish.getSize());
         System.out.println(clownfish.makeJokes());
         System.out.println();
+
+        // D1
+        System.out.println("-- I am a BUTTERFLY --");
+        AdultButterfly adultButterfly = new AdultButterfly();
+        System.out.println(adultButterfly.fly());
+        System.out.println(adultButterfly.getSound());
+        System.out.println();
+
+        // D2
+        System.out.println("-- I am a CATERPILLAR --");
+        CaterpillarButterfly caterpillar = new CaterpillarButterfly();
+        System.out.println(caterpillar.walk());
+        System.out.println();
+
     }
 }
