@@ -1,5 +1,9 @@
 package com.m2359;
 
+import com.m2359.IAnimal.CanFly;
+import com.m2359.IAnimal.CanSing;
+import com.m2359.IAnimal.CanSwim;
+import com.m2359.IAnimal.CanWalk;
 import com.m2359.chicken.Chicken;
 import com.m2359.chicken.Rooster;
 import com.m2359.fish.Clownfish;
@@ -93,6 +97,46 @@ public class Solution {
         System.out.println("-- I am a CATERPILLAR --");
         CaterpillarButterfly caterpillar = new CaterpillarButterfly();
         System.out.println(caterpillar.walk());
+        System.out.println();
+
+        // E
+        Animal[] animals = new Animal[]{ new Bird(),
+                new Duck(),
+                new Chicken(),
+                new Rooster(),
+                new Parrot(),
+                new Fish(),
+                new Shark("gigantic", Color.GREY),
+                new Clownfish("tiny", Color.ORANGE),
+                new Dolphin(),
+                new Dog(),
+                new Butterfly(),
+                new Cat()
+        };
+
+        int countSwim = 0;
+        int countFly = 0;
+        int countWalk = 0;
+        int countSing = 0;
+
+        for (Animal animal : animals) {
+            if (animal instanceof CanSwim) {
+                countSwim++;
+            }
+            if (animal instanceof CanFly) {
+                countFly++;
+            }
+            if (animal instanceof CanWalk) {
+                countWalk++;
+            }
+            if (animal instanceof CanSing) {
+                countSing++;
+            }
+        }
+        System.out.println("No of animals that can SWIM: " + countSwim);
+        System.out.println("No of animals that can FLY: " + countFly);
+        System.out.println("No of animals that can WALK: " + countWalk);
+        System.out.println("No of animals that can SING: " + countSing);
         System.out.println();
 
     }
