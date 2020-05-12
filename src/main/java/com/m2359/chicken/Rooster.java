@@ -1,4 +1,4 @@
-package com.m2359;
+package com.m2359.chicken;
 
 public class Rooster extends Chicken {
     @Override

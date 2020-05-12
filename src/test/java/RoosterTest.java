@@ -1,4 +1,4 @@
-import com.m2359.Rooster;
+import com.m2359.chicken.Rooster;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

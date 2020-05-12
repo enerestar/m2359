@@ -1,5 +1,6 @@
-package com.m2359;
+package com.m2359.chicken;
 
+import com.m2359.Animal;
 import com.m2359.IAnimal.CanWalk;
 
 public class Chicken extends Animal implements CanWalk {
