@@ -24,6 +24,11 @@ public class Solution {
         System.out.println(duck.swim());
         System.out.println();
 
+        System.out.println("--- I am a ROOSTER ---");
+        Rooster rooster = new Rooster();
+        System.out.println(rooster.getSound());
+        System.out.println();
+
 
     }
 }
